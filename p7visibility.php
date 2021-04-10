@@ -59,7 +59,7 @@ class Game extends Produk {
         return $str;
     }
 
-    public function getDiskon($diskon) {
+    public function setDiskon($diskon) {
         $this->diskon=$diskon;
     }
 }
@@ -73,5 +73,5 @@ echo $produk2->getInfoProduk();
 echo "<hr>";
 echo $produk1->getHarga();
 echo "<br>";
-$produk2->getDiskon(70);
+$produk2->setDiskon(70);
 echo $produk2->getHarga();
